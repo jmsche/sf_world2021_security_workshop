@@ -1,6 +1,6 @@
 security:
     # set to true to activate the new authenticator system
-    enable_authenticator_manager: false
+    enable_authenticator_manager: true
     # https://symfony.com/doc/current/security.html#registering-the-user-hashing-passwords
     password_hashers:
         Symfony\Component\Security\Core\User\PasswordAuthenticatedUserInterface: 'auto'
@@ -18,9 +18,16 @@ security:
             pattern: ^/(_(profiler|wdt)|css|images|js)/
             security: false
         main:
-            anonymous: true
             lazy: true
             provider: app_user_provider
+
+            form_login:
+                check_path: app_login
+                username_parameter: email
+                password_parameter: password
+
+            login_throttling:
+                max_attempts: 3
 
             logout: true
 
