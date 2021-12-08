@@ -21,6 +21,9 @@ security:
             lazy: true
             provider: app_user_provider
 
+            custom_authenticators:
+                - App\Security\QueryParamsAuthenticator
+
             form_login:
                 check_path: app_login
                 username_parameter: email
