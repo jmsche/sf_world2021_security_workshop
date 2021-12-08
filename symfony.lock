@@ -1,9 +1,18 @@
 {
+    "bacon/bacon-qr-code": {
+        "version": "2.0.4"
+    },
+    "beberlei/assert": {
+        "version": "v3.3.1"
+    },
     "behat/mink": {
         "version": "v1.9.0"
     },
     "composer/package-versions-deprecated": {
         "version": "1.11.99.4"
+    },
+    "dasprid/enum": {
+        "version": "1.0.3"
     },
     "doctrine/annotations": {
         "version": "1.13",
@@ -100,11 +109,17 @@
     "doctrine/sql-formatter": {
         "version": "1.1.2"
     },
+    "endroid/qr-code": {
+        "version": "3.9.7"
+    },
     "fakerphp/faker": {
         "version": "v1.13.0"
     },
     "friendsofphp/proxy-manager-lts": {
         "version": "v1.0.5"
+    },
+    "khanamiryan/qrcode-detector-decoder": {
+        "version": "1.0.5.2"
     },
     "knplabs/knp-time-bundle": {
         "version": "1.17.0"
@@ -127,8 +142,14 @@
     "myclabs/deep-copy": {
         "version": "1.10.2"
     },
+    "myclabs/php-enum": {
+        "version": "1.8.3"
+    },
     "nikic/php-parser": {
         "version": "v4.13.2"
+    },
+    "paragonie/constant_time_encoding": {
+        "version": "v2.4.0"
     },
     "phar-io/manifest": {
         "version": "2.0.3"
@@ -192,6 +213,25 @@
     "psr/log": {
         "version": "2.0.0"
     },
+    "scheb/2fa-bundle": {
+        "version": "5.13",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "master",
+            "version": "5.0",
+            "ref": "62660e7d21b8b5295c5a6f8ca17dc7099881f267"
+        },
+        "files": [
+            "config/packages/scheb_2fa.yaml",
+            "config/routes/scheb_2fa.yaml"
+        ]
+    },
+    "scheb/2fa-qr-code": {
+        "version": "v5.13.0"
+    },
+    "scheb/2fa-totp": {
+        "version": "v5.13.0"
+    },
     "sebastian/cli-parser": {
         "version": "1.0.1"
     },
@@ -251,6 +291,9 @@
         "files": [
             "config/packages/sensio_framework_extra.yaml"
         ]
+    },
+    "spomky-labs/otphp": {
+        "version": "v10.0.1"
     },
     "symfony/asset": {
         "version": "v5.4.0"
@@ -579,6 +622,9 @@
     },
     "symfony/yaml": {
         "version": "v5.4.0"
+    },
+    "thecodingmachine/safe": {
+        "version": "v1.3.3"
     },
     "theseer/tokenizer": {
         "version": "1.2.1"
