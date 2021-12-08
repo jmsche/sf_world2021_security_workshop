@@ -22,7 +22,6 @@ class ApiFunctionalTest extends KernelTestCase
             ->assertJson()
         ;
         $data = json_decode($browser->response()->body(), true);
-        dd($data);
 
         $this->browser()
             ->get('/api/me', [
